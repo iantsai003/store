@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>後台管理</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>後台管理</h1>
+
+  <h2>商品管理</h2>
+  <form id="product-form">
+    <input type="text" id="product-name" placeholder="商品名稱" required>
+    <input type="number" id="product-price" placeholder="商品價格" required>
+    <input type="file" id="product-image" accept="image/*" required>
+    <button type="submit">新增商品</button>
+  </form>
+
+  <ul id="product-list"></ul>
+
+  <h2>訂單列表</h2>
+  <ul id="order-list"></ul>
+
+  <script src="admin.js"></script>
+</body>
+</html>
